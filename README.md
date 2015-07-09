@@ -8,11 +8,10 @@ This is useful for HVAC projects (thermostats, (de)humidifiers, ventilation), in
  1. Dew point [https://en.wikipedia.org/wiki/Dew_point]
  2. Heat index (US) [https://en.wikipedia.org/wiki/Heat_index]
  3. Humindex (Canada) [https://en.wikipedia.org/wiki/Humidex]
- 4. Fresh air requirements [http://www.engineeringtoolbox.com/air-change-rate-d_882.html]	
+ 4. // Fresh air requirements [http://www.engineeringtoolbox.com/air-change-rate-d_882.html]	
  6. Human physiology: respiration, comfort levels  
-	* projects: meteo, HVAC
 	* Refernces 
-		* [http://www.engineeringtoolbox.com/human-air-d_186.html]
+//		* [http://www.engineeringtoolbox.com/human-air-d_186.html]
 		* [http://www.engineeringtoolbox.com/relative-humidity-health-d_896.html]
 		* [http://www.engineeringtoolbox.com/temperature-relative-humidity-d_1118.html]
 		* [http://www.engineeringtoolbox.com/indoor-outdoor-temperature-d_1018.html]
@@ -25,6 +24,6 @@ This is useful for HVAC projects (thermostats, (de)humidifiers, ventilation), in
 		* [http://www.engineeringtoolbox.com/indoor-design-temperatures-d_109.html]
 		
  5. Temperature and Pressure conversion routines
- 6. 
+ 6. Various human physiology constants: needed air for breathing, generated heat, healthy limits for various gases 
 
 Feed in temperature, pressure and relative humidity data from your sensors 
