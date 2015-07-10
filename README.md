@@ -12,10 +12,10 @@ This is useful for HVAC projects (thermostats, (de)humidifiers, ventilation), in
  6. Human physiology: respiration, comfort levels  
 	* Refernces 
 //		* [http://www.engineeringtoolbox.com/human-air-d_186.html]
-		* [http://www.engineeringtoolbox.com/relative-humidity-health-d_896.html]
-		* [http://www.engineeringtoolbox.com/temperature-relative-humidity-d_1118.html]
-		* [http://www.engineeringtoolbox.com/indoor-outdoor-temperature-d_1018.html]
-		* [http://www.engineeringtoolbox.com/relative-humidity-d_895.html]
+//		* [http://www.engineeringtoolbox.com/relative-humidity-health-d_896.html]
+
+//		* [http://www.engineeringtoolbox.com/indoor-outdoor-temperature-d_1018.html]
+		* []
 		* [http://www.engineeringtoolbox.com/co2-comfort-level-d_1024.html]
 		* [http://www.engineeringtoolbox.com/ammonia-health-symptoms-d_901.html]
 		* [http://www.engineeringtoolbox.com/air-contaminants-limits-d_1538.html]

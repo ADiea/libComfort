@@ -28,8 +28,27 @@ typedef ppm float; /** Gas concentration expressed in parts per milion*/
 #define HUMAN_BREATH_OXYGEN 16.5 //percent
 #define HUMAN_BREATH_CO2 4.0 //percent. the rest is nitrogen
 
+//
+//http://www.sterlingiaq.com/photos/1044922825.pdf
+//RH values for health hazards:
+//	Bacteria: RH < 30 && RH >60
+//  Viruses: RH < 50 && RH >70
+//  Fungi: RH >60
+//  Respiratory infections: RH < 50
+#define HEALTHY_RH_LOW 30
+#define HEALTHY_RH_HIGH 60
+#define HEALTHY_RH_THRESH 5
 
+//Recommended summer indoor temp vs outdoor temp relationship 
+//based on http://www.engineeringtoolbox.com/indoor-outdoor-temperature-d_1018.html
+inline tempCelsius recomIndoorTempSummer(tempCelsius outDoorTemp)
+{ return outDoorTemp * 0.283313f + 17.349255f;}
 
+CO2Level CO2Levels[] = 
+{
+{400, "Outdoor"},
+
+}
 
 
 /* *** *** *** *** *** *** *** *** *** USER SWITCHES *** *** *** *** *** *** *** *** *** *** *** *** */
