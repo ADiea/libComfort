@@ -1,29 +1,20 @@
 # libThermo
-Thermodynamic and physiological routines for determining human comfort and meteorological data based on temperature, pressure, RH, dust, CO and CO2 concentration.
+Thermodynamic and physiological constants and routines for determining human comfort and meteorological data based on temperature, pressure, RH, dust, CO and CO2 concentration.
 
-This is useful for HVAC projects (thermostats, (de)humidifiers, ventilation), indoor and outdoor condition assessment.
+This should prove useful for HVAC projects (thermostats, (de)humidifiers, ventilation), indoor and outdoor condition assessment, home automation, etc.
 
 ##Features
 
  1. Dew point [https://en.wikipedia.org/wiki/Dew_point]
  2. Heat index (US) [https://en.wikipedia.org/wiki/Heat_index]
  3. Humindex (Canada) [https://en.wikipedia.org/wiki/Humidex]
- 4. // Fresh air requirements [http://www.engineeringtoolbox.com/air-change-rate-d_882.html]	
- 6. Human physiology: respiration, comfort levels  
-	* Refernces 
-//		* [http://www.engineeringtoolbox.com/human-air-d_186.html]
-//		* [http://www.engineeringtoolbox.com/relative-humidity-health-d_896.html]
-
-//		* [http://www.engineeringtoolbox.com/indoor-outdoor-temperature-d_1018.html]
-		* []
-		* [http://www.engineeringtoolbox.com/co2-comfort-level-d_1024.html]
-		* [http://www.engineeringtoolbox.com/ammonia-health-symptoms-d_901.html]
-		* [http://www.engineeringtoolbox.com/air-contaminants-limits-d_1538.html]
-		* [http://www.engineeringtoolbox.com/co2-persons-d_691.html]
-		* [http://www.engineeringtoolbox.com/carbon-monoxide-d_893.html]
-		* [http://www.engineeringtoolbox.com/indoor-design-temperatures-d_109.html]
-		
- 5. Temperature and Pressure conversion routines
- 6. Various human physiology constants: needed air for breathing, generated heat, healthy limits for various gases 
-
-Feed in temperature, pressure and relative humidity data from your sensors 
+ 4. Human physiology constants: needed air for breathing, generated heat, healthy limits for various gases  
+ 5. Thermal comfort - takes into account the relation between temperature and RH
+	* Empiric comfort function based on comfort profiles(parametric lines)
+	* Current comfort profile adapts as the user sets new temperature.	
+	* Determine optimal temperature and if it's too cold, hot, humid, dry, based on current comfort profile
+	* Multiple comfort profiles possible. Default based on http://epb.apogee.net/res/refcomf.asp	
+ 6. // Fresh air requirements [http://www.engineeringtoolbox.com/air-change-rate-d_882.html]	
+ 7. Temperature and Pressure conversion routines
+ 
+Feed in temperature, pressure, relative humidity, gas & dust concentration data from your sensors.
