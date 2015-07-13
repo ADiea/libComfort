@@ -88,6 +88,8 @@ GasLevel CO2_Levels[] =
 	{100000, 0, "Death"},
 }
 
+char* get_CO2_ExposureDescription(ppm gasConcentration, unsigned short minutes);
+
 //#define CO_INTOXICATION_SIMPTOMS "headache, tiredness, fatigue, nausea and dizziness"
 GasLevel CO_Levels[] = 
 {
@@ -100,6 +102,8 @@ GasLevel CO_Levels[] =
 	{800, 45, "DizzinessNausea"},
 	{1600, 20, "DeathInOneHour"},
 }
+
+char* get_CO_ExposureDescription(ppm gasConcentration, unsigned short minutes);
 
 /* *** *** *** *** *** *** *** *** *** PRESSURE *** *** *** *** *** *** *** *** *** *** *** *** *** */
 
@@ -149,12 +153,25 @@ inline float convertPressure(float value, PressureUnits to, PressureUnits from)
 
 //Heatindex comfort map
 //http://www.srh.noaa.gov/ama/?n=heatindex
-...
+struct HeatIndexLevel
+{
+	tempCelsius levelThreshold;
+	char* description;
+}
+
+HeatIndexLevel heatIndexLevels = 
+{
+	{26.66, "Yellow_Fatigue"},
+	{32.22, "Mustard_PossibleHeatStroke"},
+	{39.44, "Orange_ProbableHeatStroke"},
+	{51.11, "Red_LikelyHeatStroke"}
+};
+
+char* getHeatIndexDescription(tempCelsius t);
 
 //Convert between temperature units
 inline tempFahrenheit convertCtoF(tempCelsius c){ return c * 1.8f + 32; }
 inline tempCelsius convertFtoC(tempFahrenheit f){ return (f-32)/1.8f; }
-
 
 
 /* *** *** *** *** *** *** *** *** *** COMFORT *** *** *** *** *** *** *** *** *** *** *** *** */
